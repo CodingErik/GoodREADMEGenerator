@@ -11,15 +11,15 @@ accepts input
 /*
 Include: 
 
-title - choose a title for your project 
+[DONE] title - choose a title for your project 
 
-description - give us description of you project here 
+[DONE] description - give us description of you project here 
 
-table of contents - check the things that will be in your table of contents
+table of contents - this will check to see which topics are included in the table of contents
 
-installation - NPM install  -node index.js
+[DONE] installation - NPM install  -node index.js
 
-usage- This generator makes README.md for your project 
+[DONE] usage- This generator makes README.md for your project 
 
 
 LICENSE [DONE]********* 

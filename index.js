@@ -4,30 +4,35 @@ let inquirer = require('inquirer');
 
 // array of questions for user
 const questions = [
+    // THIS IS THE TITLE SECTION ********************
     {
         type: 'input', 
         message: 'What is the title of your project',
         name: 'title',
         validate: validateEntries
     },
+    // THIS IS THE DESCRIPTION SECTION ********************
     {
         type: 'input',
         message: 'Please, provide a brief description of you project.',
         name: 'description',
         validate: validateEntries
     },
+    // THIS IS THE INSTALLATION SECTION ********************
     {
         type: 'input',
         message: 'Please, provide an explanation of how to install the software',
         name: 'Installation',
         validate: validateEntries
     },
+    // THIS IS THE USAGE SECTION ********************
     {
         type: 'input',
-        message: 'Provide instructions and examples for use.',
+        message: 'Provide instructions and examples for use of this program',
         name: 'Usage',
         validate: validateEntries 
     },
+    // THIS IS THE LICENSE SECTION ********************
     {
         type: 'list',
         message: 'Please check the license you would like to use for this project',
@@ -46,16 +51,33 @@ const questions = [
         ],
         name: 'license'
     },
+    // THIS IS THE CONTRIBUTING SECTION ********************
     {
         type: 'input',
         message: 'Please specify the way you would like a contributor to contribute',
         name: 'contributing',
         validate: validateEntries
     },
+    // THIS IS THE TEST SECTION ********************
     {
         type: 'input',
         message: 'Please enter any testing code you would like to provide',
-        name: ''
+        name: 'test',
+        validate: validateEntries
+    },
+    // THIS IS THE CREDIT CONTACT INFO SECTION ********************
+    {
+        type: 'input',
+        message: 'Please enter your github user name',
+        name: 'userName',
+        validate: validateEntries
+        
+    },
+    {
+        type: 'input',
+        message: 'Please enter your github user email',
+        name: 'userEmail',
+        validate: validateEntries
     }
 ];
 

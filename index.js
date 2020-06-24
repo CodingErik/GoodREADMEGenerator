@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require('./generateMarkdown');
 const fs = require('fs');
+const { getGithubProf } = require('./fetch'); 
 
 
 
@@ -151,7 +152,7 @@ async function init() {
         // Using await and async
         let object = await inquirer.prompt(questions);
 
-        object.gitHubLink = await getGithubProf(object.userName);
+        object.gitHubLink = await getGithubProf(object.userName); 
 
         // this wait for the inquirer to be done return the specified link
         object.licenseBadge = await getLicenseLink(object.license);
@@ -160,7 +161,7 @@ async function init() {
         await writeToFile('./GeneratedREADME/README.md', object);
     }
     catch (error){
-        console.log(error.message); 
+        console.log(error); 
     }
     finally{
         return `Thanks for using the read me generator!!!!!`

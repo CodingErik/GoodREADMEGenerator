@@ -14,6 +14,13 @@ const questions = [
         name: 'name',
         validate: validateEntries
     },
+     // THIS IS THE ROLE SECTION ********************
+     {
+        type: 'input',
+        message: 'What is your role in the project',
+        name: 'role',
+        validate: validateEntries
+    },
     // THIS IS THE TITLE SECTION ********************
     {
         type: 'input',

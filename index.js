@@ -101,11 +101,12 @@ const questions = [
 ];
 
 // GETLICENSE 
+// get the license link and badge
 // ***************************************
 function getLicenseLink(licenseName) {
 
     switch (licenseName) {
-        case 'GNU AGPLv3': return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0`;
+        case 'GNU AGPLv3': return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
         case 'GNU GPLv3': return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
         case 'GNU LGPLv3': return `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
         case 'GNU FDL v1.3': return `[![License: FDL 1.3](https://img.shields.io/badge/License-FDL%20v1.3-blue.svg)](https://www.gnu.org/licenses/fdl-1.3)`;

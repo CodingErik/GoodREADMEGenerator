@@ -1,4 +1,5 @@
-let inquirer = require('inquirer'); 
+const inquirer = require('inquirer');
+
 
 
 
@@ -6,7 +7,7 @@ let inquirer = require('inquirer');
 const questions = [
     // THIS IS THE TITLE SECTION ********************
     {
-        type: 'input', 
+        type: 'input',
         message: 'What is the title of your project',
         name: 'title',
         validate: validateEntries
@@ -30,7 +31,7 @@ const questions = [
         type: 'input',
         message: 'Provide instructions and examples for use of this program',
         name: 'Usage',
-        validate: validateEntries 
+        validate: validateEntries
     },
     // THIS IS THE LICENSE SECTION ********************
     {
@@ -65,19 +66,21 @@ const questions = [
         name: 'test',
         validate: validateEntries
     },
-    // THIS IS THE CREDIT CONTACT INFO SECTION ********************
+    // THIS IS THE CREDIT/CONTACT INFO SECTION ********************
+    // THIS IS THE userName INFO SECTION ********************
     {
         type: 'input',
         message: 'Please enter your github user name',
         name: 'userName',
         validate: validateEntries
-        
+
     },
+    // THIS IS THE userEmail INFO SECTION ********************
     {
         type: 'input',
         message: 'Please enter your github user email',
         name: 'userEmail',
-        validate: validateEntries
+        validate: value => (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) ? true :  'this is not a valid email adress'
     }
 ];
 
@@ -85,11 +88,14 @@ const questions = [
 // this function validates entries for the user inputs
 // and returns the value if it is valid 
 // ***************************************
-function validateEntries(){
-        // checks the for the name and regexes accordingly 
+function validateEntries(value) {
+    // checks the for the name and regexes accordingly 
+    if (value === '') {
+        return 'this is not a valid input';
+    } else {
+        return true;
+    };
 }
-
-
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -97,7 +103,7 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((data) => { console.log(data); });
 }
 
 // function call to initialize program

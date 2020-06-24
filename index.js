@@ -1,21 +1,21 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require('./generateMarkdown');
-const fs = require('fs'); 
+const fs = require('fs');
 
 
 
 
 // array of questions for user
 const questions = [
-     // THIS IS THE NAME SECTION ********************
-     {
+    // THIS IS THE NAME SECTION ********************
+    {
         type: 'input',
         message: 'What is your name',
         name: 'name',
         validate: validateEntries
     },
-     // THIS IS THE ROLE SECTION ********************
-     {
+    // THIS IS THE ROLE SECTION ********************
+    {
         type: 'input',
         message: 'What is your role in the project',
         name: 'role',
@@ -102,8 +102,47 @@ const questions = [
 
 // GETLICENSE 
 // ***************************************
-function getLicense(licenseName){
-    return licenseName;
+function getLicenseLink(licenseName) {
+
+    switch (licenseName) {
+        case 'GNU AGPLv3':
+            
+            break;
+        case 'GNU GPLv3':
+            
+            break;
+        case 'GNU LGPLv3':
+            
+            break;
+        case 'GNU FDL v1.3':
+
+            break;
+        case 'Mozilla Public License 2.0':
+            
+            break;
+        case  'Apache License 2.0':
+            
+            break;
+        case  'MIT License':
+            
+            break;
+        case  'Boost Software License 1.0':
+            
+            break;
+        case  'IBM Public License Version 1.0':
+            
+            break;
+        case  'Eclipse Public License 1.0':
+            
+            break;
+        case  'Unlicense':
+            
+            break;
+    
+        default:
+            break;
+    }
+
 }
 // ***************************************
 
@@ -124,19 +163,30 @@ function validateEntries(value) {
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, generateMarkdown(data), (err) => {
-        (err)? console.log(err): console.log(`file has been written Succesfully!!!`);
-    }); 
+        (err) ? console.log(err) : console.log(`file has been written Succesfully!!!`);
+    });
 }
 
 // function to initialize program
-function init() {
-    
+async function init() {
+
+    // using .then with promises
     // inquirer returns a promise so then we deal with the promise 
-    inquirer.prompt(questions)
-    .then((data) => { console.log(data); writeToFile('./GeneratedREADME/README.md', data); return getLicense(data.license)})
-    .catch( err => console.log(err.message))
-    .then( license => console.log(`this should be the license chosen ${license}`))
-    .catch( err => console.log(err.message));
+    // inquirer.prompt(questions)
+    // .then((data) => { console.log(data); writeToFile('./GeneratedREADME/README.md', data); return getLicense(data.license)})
+    // .catch( err => console.log(err.message))
+    // .then( license => console.log(`this should be the license chosen ${license}`))
+    // .catch( err => console.log(err.message));
+
+    // Using await and async
+    let object = await inquirer.prompt(questions);
+
+    // this wait for the inquirer to be done return the specified link
+    object.licenseLink = await getLicenseLink(object.license); 
+    
+    let writeREADME = await writeToFile('./GeneratedREADME/README.md', object);
+    
+
 
 }
 

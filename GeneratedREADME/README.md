@@ -1,12 +1,10 @@
 
 
-  # Title
-  
-  back end
+  # The coolest Project
 
   ## Description
   
-  htis issfldjsf
+  sldjf
   
   
   ## Table of Contents 
@@ -23,23 +21,23 @@
   
   ## Installation
   
-  npm i
+  lsdkjfs
   
   
   ## Usage
   
-  sldjf 
+  dfs 
   
   Include screenshots as needed. 
   
   
   ## Credits
   
-  * erik, lead Dev: Email: [erik@gmail.com](emailTo:erik@gmail.com), Github Username: sldfkj;
+  * Erik, sdf: Email: [asldfjksadflk@gamsldfj.com](emailTo:asldfjksadflk@gamsldfj.com), Github Username: s;
 
   ## Licensed 🏆 
   
-  MIT License 
+  GNU AGPLv3 
   
   [https://choosealicense.com/](https://choosealicense.com/)
   
@@ -52,13 +50,13 @@
   
   ## Contributing 
   
-  lsdkjfasd
+  dsd
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  sldfkj
+  fssfd
   
   
 

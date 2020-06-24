@@ -39,7 +39,7 @@ function generateMarkdown(data) {
 
   ## Licensed 🏆 
   
-  ${data.license} 
+  ${data.licenseLink} 
   
   [https://choosealicense.com/](https://choosealicense.com/)
   

@@ -147,24 +147,15 @@ function writeToFile(fileName, data) {
 // function to initialize program
 async function init() {
 
-    // using .then with promises
-    // inquirer returns a promise so then we deal with the promise 
-    // inquirer.prompt(questions)
-    // .then((data) => { console.log(data); writeToFile('./GeneratedREADME/README.md', data); return getLicense(data.license)})
-    // .catch( err => console.log(err.message))
-    // .then( license => console.log(`this should be the license chosen ${license}`))
-    // .catch( err => console.log(err.message));
-
     // Using await and async
     let object = await inquirer.prompt(questions);
 
     // this wait for the inquirer to be done return the specified link
     object.licenseBadge = await getLicenseLink(object.license); 
     
-    let writeREADME = await writeToFile('./GeneratedREADME/README.md', object);
+    // waiting to write the file here
+    await writeToFile('./GeneratedREADME/README.md', object);
     
-
-
 }
 
 // function call to initialize program

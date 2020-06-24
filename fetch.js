@@ -1,12 +1,26 @@
-const fetch = require('fetch'); 
+const fetch = require('node-fetch');
 
 
-function getGithubProf(userName){
+async function getGithubProf(userName) {
 
-    // fetch('')
-    console.log('this is the getGithubProf function');
-    // we gotta get the userName and then call the github API and get the data
-};
+    // here we wait for the github API to get us the json
+    let gitHubData = await fetch(`https://api.github.com/users/${userName}/repos?per_page=100`);
 
+    let dataJSON = await gitHubData.json();
+
+    // get the owner url 
+    return ` ${dataJSON[0]['owner'].url}`; 
+
+}
+// we gotta get the userName and then call the github API and get the data
+
+
+getGithubProf('codingErik');
 
 module.exports = getGithubProf;
+
+// // test 
+// fetch(`https://api.github.com/users/codingErik/repos?per_page=100`)
+// .then(response => {
+//     console.log(response); 
+// })

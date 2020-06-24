@@ -123,7 +123,14 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((data) => { console.log(data); writeToFile('./README.md', data); });
+    
+    // inquirer returns a promise so then we deal with the promise 
+    inquirer.prompt(questions)
+    .then((data) => { console.log(data); writeToFile('./GeneratedREADME/README.md', data); return getLicense(data.license)})
+    .catch( err => console.log(err.message))
+    .then( license => console.log(`this should be the license chosen ${license}`))
+    .catch( err => console.log(err.message));
+
 }
 
 // function call to initialize program

@@ -14,12 +14,9 @@ async function getGithubProf(userName) {
 }
 // we gotta get the userName and then call the github API and get the data
 
-
-getGithubProf('codingErik');
-
 module.exports = getGithubProf;
 
-// // test 
+// // test with promises 
 // fetch(`https://api.github.com/users/codingErik/repos?per_page=100`)
 // .then(response => {
 //     console.log(response); 

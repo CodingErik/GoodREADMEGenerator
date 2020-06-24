@@ -111,12 +111,12 @@ function getLicenseLink(licenseName) {
         case 'GNU LGPLv3': return `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
         case 'GNU FDL v1.3': return `[![License: FDL 1.3](https://img.shields.io/badge/License-FDL%20v1.3-blue.svg)](https://www.gnu.org/licenses/fdl-1.3)`;
         case 'Mozilla Public License 2.0': return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
-        case  'Apache License 2.0': return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-        case  'MIT License': return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-        case  'Boost Software License 1.0': return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
-        case  'IBM Public License Version 1.0': return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`;
-        case  'Eclipse Public License 1.0':  return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
-        case  'Unlicense': return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+        case 'Apache License 2.0': return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+        case 'MIT License': return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+        case 'Boost Software License 1.0': return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
+        case 'IBM Public License Version 1.0': return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`;
+        case 'Eclipse Public License 1.0': return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
+        case 'Unlicense': return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
         default: return `Something went really wrong! did you pick a license?`;
     };
 
@@ -140,21 +140,31 @@ function validateEntries(value) {
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, generateMarkdown(data), (err) => {
-        (err) ? console.log(err) : console.log(`file has been written Succesfully!!!`);
+        (err) ? console.log(`There was an error when writting the readme ${err}`) : console.log(`file has been written Succesfully!!!`);
     });
 }
 
 // function to initialize program
 async function init() {
 
-    // Using await and async
-    let object = await inquirer.prompt(questions);
+    try {
+        // Using await and async
+        let object = await inquirer.prompt(questions);
 
-    // this wait for the inquirer to be done return the specified link
-    object.licenseBadge = await getLicenseLink(object.license); 
-    
-    // waiting to write the file here
-    await writeToFile('./GeneratedREADME/README.md', object);
+        object.gitHubLink = await getGithubProf(object.userName);
+
+        // this wait for the inquirer to be done return the specified link
+        object.licenseBadge = await getLicenseLink(object.license);
+
+        // waiting to write the file here
+        await writeToFile('./GeneratedREADME/README.md', object);
+    }
+    catch (error){
+        console.log(error.message); 
+    }
+    finally{
+        return `Thanks for using the read me generator!!!!!`
+    }
     
 }
 

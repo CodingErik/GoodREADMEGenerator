@@ -35,7 +35,7 @@ function generateMarkdown(data) {
   
   ## Credits
   
-  * ${data.name}, ${data.role}: Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName};
+  * ${data.name}, ${data.role}: Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName} Github Link: ${data.gitHubLink}
 
   ## Licensed 🏆 
   

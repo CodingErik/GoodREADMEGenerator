@@ -7,6 +7,13 @@ const fs = require('fs');
 
 // array of questions for user
 const questions = [
+     // THIS IS THE NAME SECTION ********************
+     {
+        type: 'input',
+        message: 'What is your name',
+        name: 'name',
+        validate: validateEntries
+    },
     // THIS IS THE TITLE SECTION ********************
     {
         type: 'input',

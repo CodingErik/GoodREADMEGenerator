@@ -36,7 +36,7 @@ function generateMarkdown(data) {
   ## Credits
 
   
-  * Kayla Cinnamon, Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName};
+  * ${data.name}, Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName};
   
   List your collaborators, if any, with links to their GitHub profiles.
   

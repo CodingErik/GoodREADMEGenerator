@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const generateMarkdown = require('./generateMarkdown');
+const fs = require('fs'); 
 
 
 
@@ -80,7 +82,7 @@ const questions = [
         type: 'input',
         message: 'Please enter your github user email',
         name: 'userEmail',
-        validate: value => (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) ? true :  'this is not a valid email adress'
+        validate: value => (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) ? true : 'this is not a valid email adress'
     }
 ];
 
@@ -99,11 +101,15 @@ function validateEntries(value) {
 
 // function to write README file
 function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, generateMarkdown(data), (err) => {
+        (err)? console.log(err): console.log(`file has been written Succesfully!!!`);
+    }); 
 }
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((data) => { console.log(data); });
+    inquirer.prompt(questions).then((data) => { console.log(data); writeToFile('./README.md', data); });
 }
 
 // function call to initialize program

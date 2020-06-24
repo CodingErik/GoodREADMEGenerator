@@ -2,9 +2,13 @@
 function generateMarkdown(data) {
   return `
 
-  # ${data.title}
+  # Title
+  
+  ${data.title}
 
-  ## ${data.description}
+  ## Description
+  
+  ${data.description}
   
   
   ## Table of Contents 
@@ -17,20 +21,22 @@ function generateMarkdown(data) {
   * [License](#license)
   
   
-  ## ${data.Installation}
+  ## Installation
   
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  ${data.Installation}
   
   
-  ## ${data.Usage} 
+  ## Usage
+  
+  ${data.Usage} 
   
   Provide instructions and examples for use. Include screenshots as needed. 
   
   
   ## Credits
 
-  ${data.userName}
-  ${data.userEmail}
+  
+  * Kayla Cinnamon, Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName};
   
   List your collaborators, if any, with links to their GitHub profiles.
   

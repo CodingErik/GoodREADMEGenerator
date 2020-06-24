@@ -39,15 +39,13 @@ function generateMarkdown(data) {
 
   ## Licensed 🏆 
   
-  ${data.licenseLink} 
+  ${data.license} 
   
-  [https://choosealicense.com/](https://choosealicense.com/)
+
   
   ## Badges
   
-  ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-  
-  [shields.io](https://shields.io/)
+  ${data.licenseBadge}
   
   
   ## Contributing 

@@ -1,12 +1,12 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `
 
-  # ${data.title}
+
+  # Title
+  
+  back end
 
   ## Description
   
-  ${data.description}
+  htis issfldjsf
   
   
   ## Table of Contents 
@@ -23,23 +23,23 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data.Installation}
+  npm i
   
   
   ## Usage
   
-  ${data.Usage} 
+  sldjf 
   
   Include screenshots as needed. 
   
   
   ## Credits
   
-  * ${data.name}, ${data.role}: Email: [${data.userEmail}](emailTo:${data.userEmail}), Github Username: ${data.userName};
+  * erik, lead Dev: Email: [erik@gmail.com](emailTo:erik@gmail.com), Github Username: sldfkj;
 
   ## Licensed 🏆 
   
-  ${data.license} 
+  MIT License 
   
   [https://choosealicense.com/](https://choosealicense.com/)
   
@@ -52,13 +52,13 @@ function generateMarkdown(data) {
   
   ## Contributing 
   
-  ${data.contributing}
+  lsdkjfasd
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  ${data.test}
+  sldfkj
   
   
 
@@ -84,7 +84,3 @@ function generateMarkdown(data) {
 
 
 
-`;
-}
-
-module.exports = generateMarkdown;

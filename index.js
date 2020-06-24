@@ -100,6 +100,13 @@ const questions = [
     }
 ];
 
+// GETLICENSE 
+// ***************************************
+function getLicense(licenseName){
+    return licenseName;
+}
+// ***************************************
+
 // validateEntries
 // this function validates entries for the user inputs
 // and returns the value if it is valid 

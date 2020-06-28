@@ -16,10 +16,6 @@ When creating an open source project on GitHub, it is important to have a qualit
   * Tests
   * Questions
 
-```
-node index.js
-```
-
 Because this is a command-line application that won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates the functionality of your application. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer.
 
 ## User Story
@@ -57,27 +53,22 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## 
+## Video Walkthrough 
 
-* Meets [Submission Requirements](#submission-requirements) in the following section.
 
-* Functional application.
 
-* GitHub repository with a unique name and a README describing project.
 
-* The generated README includes the following sections: 
+## Questions
 
-  * Title
-  * Description
-  * Table of Contents
-  * Installation
-  * Usage
-  * License
-  * Contributing
-  * Tests
-  * Questions
+for further questions reach me @ https://github.com/CodingErik or by email at codingerik1@gmail.com
 
-* The generated README includes 1 badge that's specific to the repository.
+
+
+
+
+## Contributing
+
+if you would like to contribute to this project submit a pull request and I would be happy to look at it!
 
 
 

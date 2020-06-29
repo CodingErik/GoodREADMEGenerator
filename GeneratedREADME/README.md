@@ -1,10 +1,10 @@
 
 
-  # lito
+  # EXAMPLE TITLE 
 
   ## Description
   
-  this is a project about the way to test thing application 
+  THIS IS A TEST DESCRIPTION
   
   
   ## Table of Contents 
@@ -21,6 +21,8 @@
   
   ## Installation
   
+  EXAMPLE 
+  
   to run this application run npm i
   
   
@@ -33,11 +35,11 @@
   
   ## Credits
   
-  * erik, lito: Email: [codingErik1@gmail.com](emailTo:codingErik1@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
+  * ERIK, LEAD DEV: Email: [codingErik1@gmail.com](emailTo:codingErik1@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
 
   ## Licensed 🏆 
   
-  Unlicense 
+  THIS IS WHERE YOUR SPECIFIED LICENSE WOULD BE 
   
 
   
@@ -48,13 +50,13 @@
   
   ## Contributing 
   
-  no
+  THIS IS WHERE YOU WOULD INCLUDE A SHORT ON HOW TO CONTRIBUTE TO THE PROJECT 
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  no
+  THIS IS WHERE ANY TEST WOULD BE INCLUDED IN THE README.md 
   
   
 

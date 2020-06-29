@@ -55,7 +55,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Video Walkthrough 
 
-[!click here to see a walthrougth!] (https://drive.google.com/file/d/1yRTHmh1IC1wHL__hx8Ca72S0LIgpbkZq/view)
+[!click here to see a walthrougth!](https://drive.google.com/file/d/1yRTHmh1IC1wHL__hx8Ca72S0LIgpbkZq/view)]
 
 
 ## Questions

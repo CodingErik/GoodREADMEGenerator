@@ -1,10 +1,10 @@
 
 
-  # lito
+  # TEST FOR DEMONSTRATION
 
   ## Description
   
-  this is a project about the way to test thing application 
+  THIS IS A DESCRIPTION FOR THE TEST DEMONSTRATION
   
   
   ## Table of Contents 
@@ -15,25 +15,25 @@
   * [Usage](#-Usage)
   * [Credits](#-Credits)
   * [License](#-License)
-  * [Badges](#-Badges)
+  * [Badges](#-Badges)◊
   * [Contributing](#-Contributing)
   * [Tests](#-Tests)
   
   ## Installation
   
-  to run this application run npm i
+  clone the repo and run test
   
   
   ## Usage
   
-  none 
+  no 
   
   Include screenshots as needed. 
   
   
   ## Credits
   
-  * erik, lito: Email: [codingErik1@gmail.com](emailTo:codingErik1@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
+  * Erik, front end dev: Email: [codingErik@gmail.com](emailTo:codingErik@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
 
   ## Licensed 🏆 
   
@@ -48,13 +48,13 @@
   
   ## Contributing 
   
-  no
+  please SUBMIT a pull request
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  no
+  n/a
   
   
 

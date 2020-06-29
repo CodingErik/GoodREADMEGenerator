@@ -13,7 +13,7 @@ async function getGithubProf(userName) {
 
 }
 // we gotta get the userName and then call the github API and get the data
-getGithubProf('codingErik');
+// getGithubProf('codingErik');
 module.exports = {getGithubProf};
 
 // // test with promises 

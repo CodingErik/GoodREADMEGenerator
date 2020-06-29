@@ -1,10 +1,10 @@
 
 
-  # TEST FOR DEMONSTRATION
+  # EXAMPLE TITLE 
 
   ## Description
   
-  THIS IS A DESCRIPTION FOR THE TEST DEMONSTRATION
+  THIS IS A TEST DESCRIPTION
   
   
   ## Table of Contents 
@@ -21,7 +21,9 @@
   
   ## Installation
   
-  clone the repo and run test
+  EXAMPLE 
+  
+  to run this application run npm i
   
   
   ## Usage
@@ -33,11 +35,11 @@
   
   ## Credits
   
-  * Erik, front end dev: Email: [codingErik@gmail.com](emailTo:codingErik@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
+  * ERIK, LEAD DEV: Email: [codingErik1@gmail.com](emailTo:codingErik1@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
 
   ## Licensed 🏆 
   
-  Unlicense 
+  THIS IS WHERE YOUR SPECIFIED LICENSE WOULD BE 
   
 
   
@@ -48,13 +50,13 @@
   
   ## Contributing 
   
-  please SUBMIT a pull request
+  THIS IS WHERE YOU WOULD INCLUDE A SHORT ON HOW TO CONTRIBUTE TO THE PROJECT 
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  n/a
+  THIS IS WHERE ANY TEST WOULD BE INCLUDED IN THE README.md 
   
   
 

@@ -1,4 +1,4 @@
-# Unit 09 Node.js and ES6+ Homework: Good README Generator
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

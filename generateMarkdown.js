@@ -4,6 +4,8 @@ function generateMarkdown(data) {
 
   # ${data.title}
 
+  ${data.licenseBadge}
+
   ## Description
   
   ${data.description}
@@ -39,14 +41,7 @@ function generateMarkdown(data) {
 
   ## Licensed 🏆 
   
-  ${data.license} 
-  
-
-  
-  ## Badges
-  
-  ${data.licenseBadge}
-  
+  ${data.license}   
   
   ## Contributing 
   

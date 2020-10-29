@@ -5,6 +5,8 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ${data.licenseBadge}
+  ![GitHub followers](https://img.shields.io/github/followers/CodingErik?logo=GitHub&style=flat)
+  ![GitHub language count](https://img.shields.io/github/languages/count/CodingErik/Google-Books-Search?color=orange&logo=GitHub&style=flat)
 
   ## Description
   
@@ -53,30 +55,6 @@ function generateMarkdown(data) {
   
   ${data.test}
   
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `;
 }
 

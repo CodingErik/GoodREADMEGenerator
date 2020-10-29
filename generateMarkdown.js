@@ -15,13 +15,13 @@ function generateMarkdown(data) {
   
   If your README is very long, add a table of contents to make it easy for users to find what they need.
   
-  * [Installation](#-Installation)
-  * [Usage](#-Usage)
-  * [Credits](#-Credits)
-  * [License](#-License)
-  * [Badges](#-Badges)
-  * [Contributing](#-Contributing)
-  * [Tests](#-Tests)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  
   
   ## Installation
   

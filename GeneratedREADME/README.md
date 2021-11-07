@@ -1,10 +1,10 @@
 
 
-  # EXAMPLE TITLE 
+  # bob's project
 
   ## Description
   
-  THIS IS A TEST DESCRIPTION
+  this is my description
   
   
   ## Table of Contents 
@@ -15,48 +15,46 @@
   * [Usage](#-Usage)
   * [Credits](#-Credits)
   * [License](#-License)
-  * [Badges](#-Badges)◊
+  * [Badges](#-Badges)
   * [Contributing](#-Contributing)
   * [Tests](#-Tests)
   
   ## Installation
   
-  EXAMPLE 
-  
-  to run this application run npm i
+  run npm i 
   
   
   ## Usage
   
-  no 
+  this is my instruction 
   
   Include screenshots as needed. 
   
   
   ## Credits
   
-  * ERIK, LEAD DEV: Email: [codingErik1@gmail.com](emailTo:codingErik1@gmail.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
+  * bob, dev: Email: [coding@coding.com](emailTo:coding@coding.com), Github Username: codingErik Github Link:  https://github.com/CodingErik
 
   ## Licensed 🏆 
   
-  THIS IS WHERE YOUR SPECIFIED LICENSE WOULD BE 
+  MIT License 
   
 
   
   ## Badges
   
-  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   
   ## Contributing 
   
-  THIS IS WHERE YOU WOULD INCLUDE A SHORT ON HOW TO CONTRIBUTE TO THE PROJECT 
+  n/a
   
   [Contributor Covenant](https://www.contributor-covenant.org/)
   
   ## Test
   
-  THIS IS WHERE ANY TEST WOULD BE INCLUDED IN THE README.md 
+  n/a
   
   
 
